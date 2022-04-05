@@ -42,7 +42,7 @@ public class TemaController {
 				.orElse(ResponseEntity.notFound().build());		
 	}
 	
-	@GetMapping("/descricao{descricao}")
+	@GetMapping("/descricao/{descricao}")
 	public ResponseEntity <List<Tema>> getByDescricao (@PathVariable String descricao){
 		return ResponseEntity.ok(temaRepository.findAllByDescricaoContainingIgnoreCase(descricao));
 		

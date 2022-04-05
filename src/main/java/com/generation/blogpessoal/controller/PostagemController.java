@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.generation.blogpessoal.model.Postagem;
+import com.generation.blogpessoal.model.Tema;
 import com.generation.blogpessoal.repository.PostagemRepository;
 
 @RestController
@@ -57,11 +58,11 @@ public class PostagemController {
 	}
 
 	@PutMapping
-	public ResponseEntity<Postagem> putPostagem(@Valid @RequestBody Postagem postagem) {
-
-		return postagemRepository.findById(postagem.getId())
-				.map(atualizar -> ResponseEntity.status(HttpStatus.CREATED).body(postagemRepository.save(atualizar)))
-				.orElse(ResponseEntity.status(HttpStatus.BAD_REQUEST).build());
+	public ResponseEntity<Postagem> putPostagem (@Valid @RequestBody Postagem postagem) {
+		
+		 return postagemRepository.findById(postagem.getId())
+				.map(atualizar -> ResponseEntity.status(HttpStatus.CREATED).body(postagemRepository.save(postagem)))
+				.orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
 
 	}
 
