@@ -25,6 +25,12 @@ public class Tema {
 	@NotBlank(message = "O atributo Descrição é obrigatório")
 	private String descricao;
 	
+	
+	@OneToMany(mappedBy = "tema", cascade = CascadeType.REMOVE)
+	@JsonIgnoreProperties("tema")
+	private List<Postagem> postagem;
+	
+	
 	public List<Postagem> getPostagem() {
 		return postagem;
 	}
@@ -32,10 +38,6 @@ public class Tema {
 	public void setPostagem(List<Postagem> postagem) {
 		this.postagem = postagem;
 	}
-
-	@OneToMany(mappedBy = "tema", cascade = CascadeType.REMOVE)
-	@JsonIgnoreProperties("tema")
-	private List<Postagem> postagem;
 
 	public Long getId() {
 		return id;
