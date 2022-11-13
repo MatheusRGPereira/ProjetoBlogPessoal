@@ -1,9 +1,9 @@
 # Api Criada para a realização do Projeto integrador Utilizando o framework Spring Boot feito através do Bootcamp Generation Brasil 📖🟢
 
 
- #### ✅ - Criação das models Categoria e postagem
+ #### ✅ - Criação das models Tema e Postagem
  * Utilizando as bibliotecas do Mysql para criacão do banco de dados
- * Tabela Categoria com a primary Key
+ * Tabela Tema com a primary Key
  * Tabela Postagem com a foreign Key
  * Tabela de Usuario
  
@@ -15,8 +15,8 @@
  #### ☑️ - Criação das camadas de controller para as Requisições Http
  * Get (Para pegar todos os elementos do banco de dados)
  * GetById(Para pegar um elemento pelo seu id)
- * Post (Para criar uma nova Categoria ou nova Postagem e a relização de um cadastro de usuario)
- * Put (Para fazer a atualização dos dados de uma Categoria ou Postagem)
+ * Post (Para criar uma novo Tema ou nova Postagem e a relização de um cadastro de usuario)
+ * Put (Para fazer a atualização dos dados de um Tema ou Postagem)
  * Delete (Para Deletar um elemento do banco de dados)
    
  #### ‼️ - Criada a camada de Security
@@ -28,11 +28,11 @@
  * No ambiente de produção foi utilizado o banco de dados Postgres para realização do deploy e integração com a plataforma do Heroku
   
  #### 🔨 - E realização dos testes feitas todas no insominia
- *Testes dos endpoints Get de Categoria/Postagens/Usuario
- *Testes dos endpoints GetbyId de Categoria/Postagens 
- *Testes dos endpoints Post de Categoria/Postagens/Usuario 
- *Testes dos endpoints Put de Categoria/Postagens/Usuario 
- *Testes dos endpoints Delete de Categoria/Postagens/Usuario
+ *Testes dos endpoints Get de Tema/Postagens/Usuario
+ *Testes dos endpoints GetbyId de Tema/Postagens 
+ *Testes dos endpoints Post de Tema/Postagens/Usuario 
+ *Testes dos endpoints Put de Tema/Postagens/Usuario 
+ *Testes dos endpoints Delete de Tema/Postagens/Usuario
  
  #### 🔨 - Integração do swagger para deploy na plataforma heroku
  * Foi Criada uma camada na aplicação fazendo a configuração do swagger com os endpoints
