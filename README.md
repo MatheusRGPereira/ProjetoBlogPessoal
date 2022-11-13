@@ -28,11 +28,11 @@
  * No ambiente de produção foi utilizado o banco de dados Postgres para realização do deploy e integração com a plataforma do Heroku
   
  #### 🔨 - E realização dos testes feitas todas no insominia
- *Testes dos endpoints Get de Tema/Postagens/Usuario
- *Testes dos endpoints GetbyId de Tema/Postagens 
- *Testes dos endpoints Post de Tema/Postagens/Usuario 
- *Testes dos endpoints Put de Tema/Postagens/Usuario 
- *Testes dos endpoints Delete de Tema/Postagens/Usuario
+ * Testes dos endpoints Get de Tema/Postagens/Usuario
+ * Testes dos endpoints GetbyId de Tema/Postagens 
+ * Testes dos endpoints Post de Tema/Postagens/Usuario 
+ * Testes dos endpoints Put de Tema/Postagens/Usuario 
+ * Testes dos endpoints Delete de Tema/Postagens/Usuario
  
  #### 🔨 - Integração do swagger para deploy na plataforma heroku
  * Foi Criada uma camada na aplicação fazendo a configuração do swagger com os endpoints
